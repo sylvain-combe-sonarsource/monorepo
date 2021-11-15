@@ -4,6 +4,7 @@ function Person(first, last) {
     this.age = null;
     this.eyeColor = null;
     this.nationality = null;
+    this.password = "donttell"
 }
 
 Person.prototype.fullname = function() {
