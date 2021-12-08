@@ -6,6 +6,9 @@ function Fruit(name, color, taste) {
 }
 
 Fruit.prototype.peelable = function() {
+    if (this.name !== NaN) { // Noncompliant; always true
+      console.log("name is not NaN"); // this statement is not necessarily true
+    }
     return this.name = "orange";
 }
 
